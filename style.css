@@ -49,7 +49,7 @@ body{
   position: absolute;
   width: 200px;
   height: 200px;
-  background: url(amazon.png);
+  background: url("assets/amazon.png");
   background-size: 200px;
   background-repeat: no-repeat;
   background-position: center;
@@ -69,7 +69,7 @@ body{
   position: absolute;
   width: 200px;
   height: 200px;
-  background: url(arrow.png);
+  background: url("assets/arrow.png");
   background-size: 200px;
   background-repeat: no-repeat;
   background-position: center;
@@ -88,4 +88,22 @@ body{
   align-items: center;
   background: #e8bb84;
   transform: rotateX(90deg) translate3d(0,0,150px);
+}
+#box .top::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background: #111 url("assets/tape.jpg");
+  background-size: 85px;
+}
+.tape{
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  width: 120px;
+  height: 60px;
+  background: #111 url("assets/tape.jpg");
+  background-position: center;
 }
