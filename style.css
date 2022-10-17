@@ -17,9 +17,9 @@ body{
   height: 300px;
   transform-style: preserve-3d;
   transform: rotateX(-30deg) rotateY(50deg);
-  animation: box 10s linear infinite;
+  /* Para que gire automaticamente */
+  /* animation: box 10s linear infinite; */
 }
-
 #box div{
   position: absolute;
   top: 0;
@@ -106,4 +106,12 @@ body{
   height: 60px;
   background: #111 url("assets/tape.jpg");
   background-position: center;
+}
+@keyframes box{
+  0%{
+      transform: rotateX(-30deg) rotateY(360deg);
+  }
+  100%{
+      transform: rotateX(-30deg) rotateY(0deg);
+  }
 }
